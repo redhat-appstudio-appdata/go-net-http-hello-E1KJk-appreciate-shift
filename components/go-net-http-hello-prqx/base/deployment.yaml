@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: go-net-http-hello-prqx
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:E1KJk-go-net-http-hello-prqx
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b3def7a19d0ea90b25ed44f515fb03d919795f7d44ef752817d9d26bde350827
         name: my-go
         ports:
         - containerPort: 8081
