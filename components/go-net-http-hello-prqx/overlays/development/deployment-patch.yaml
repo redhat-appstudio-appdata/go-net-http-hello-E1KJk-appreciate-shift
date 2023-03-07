@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: go-net-http-hello-prqx
+  namespace: samburrai-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b3def7a19d0ea90b25ed44f515fb03d919795f7d44ef752817d9d26bde350827
+        name: my-go
+        resources: {}
+status: {}
